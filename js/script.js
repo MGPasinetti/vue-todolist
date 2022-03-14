@@ -48,7 +48,8 @@ const app = new Vue({
        createNewTodo() {
            if (this.newItemTodo.text.trim() != ``) {
                 this.arrTodos.push(this.newItemTodo);
-                this.newItemTodo.text = ``;
+                // this.newItemTodo.text = ``;
+                this.$refs[newItemTodo.text].value = ``;
             };
        },
     },
