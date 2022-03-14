@@ -58,7 +58,11 @@ html {
     cursor: pointer;
 }
 
-.todo-list li .fa-times {
+.todo-list li button {
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
     font-weight: bold;
 }
 

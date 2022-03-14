@@ -29,7 +29,7 @@
         <ul class="todo-list">
             <li v-for="(item, index) in arrTodos" class="item">
                 <div v-bind:class = "(arrTodos[index].done) ? 'active':'no-active'">{{ arrTodos[index].text }}</div>
-                <i class="fas fa-times"></i>
+                <button @click="deleteItem(index)"><i class="fas fa-times"></i></button>
             </li>
         </ul>
     </div>

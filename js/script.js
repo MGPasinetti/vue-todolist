@@ -25,7 +25,7 @@ const app = new Vue({
         arrTodos: [
             {
                 text: `Fare i compiti`,
-                done: false,
+                done: true,
             },
             {
                 text: `Fare la spesa`,
@@ -33,13 +33,15 @@ const app = new Vue({
             },
             {
                 text: `Fare il bucato`,
-                done: true,
+                done: false,
             },
         ],
     },
     methods: {
-        addActiveClass() {
-            this.classList.add("active");
-        },
+       deleteItem(index) {
+           this.arrTodos.splice(index, 1);
+       },
     },
 });
+
+
