@@ -23,8 +23,8 @@
 
     <div id="root">
         <div class="add-todo">
-            <input type="text" name="todo-text" id="todo-text" placeholder="Nuovo Todo">
-            <button id="add-btn">Aggiungi</button>
+            <input v-model="newItemTodo.text" type="text" name="todo-text" id="todo-text" placeholder="Nuovo Todo">
+            <button @click="createNewTodo" id="add-btn">Aggiungi</button>
         </div>
         <ul class="todo-list">
             <li v-for="(item, index) in arrTodos" class="item">

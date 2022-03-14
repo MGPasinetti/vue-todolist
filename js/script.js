@@ -22,6 +22,10 @@ Bonus:
 const app = new Vue({
     el: `#root`,
     data: {
+        newItemTodo: {
+            text: ``,
+            done: false,
+        },
         arrTodos: [
             {
                 text: `Fare i compiti`,
@@ -41,7 +45,12 @@ const app = new Vue({
        deleteItem(index) {
            this.arrTodos.splice(index, 1);
        },
+       createNewTodo() {
+           if (this.newItemTodo.text.trim() != ``) {
+                this.arrTodos.push(this.newItemTodo);
+                this.newItemTodo.text = ``;
+            };
+       },
     },
 });
-
 
