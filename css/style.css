@@ -50,7 +50,7 @@ html {
 }
 
 .todo-list li{
-    padding: .7rem .5rem;
+    padding: .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,3 +65,8 @@ html {
 .todo-list li:hover {
     background-color: white;
 }
+
+.active {
+    text-decoration: line-through 3px solid black;
+}
+
