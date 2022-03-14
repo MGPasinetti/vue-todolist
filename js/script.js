@@ -33,11 +33,13 @@ const app = new Vue({
             },
             {
                 text: `Fare il bucato`,
-                done: false,
+                done: true,
             },
         ],
     },
     methods: {
-
+        addActiveClass() {
+            this.classList.add("active");
+        },
     },
 });

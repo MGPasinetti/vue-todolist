@@ -66,6 +66,10 @@ html {
     background-color: white;
 }
 
+.no-active {
+    text-decoration: none;
+}
+
 .active {
     text-decoration: line-through 3px solid black;
 }
