@@ -40,6 +40,7 @@ html {
     flex-grow: 1;
     flex-shrink: 0;
     background-color: #EFEFEF;
+    cursor: pointer;
 }
 
 .todo-list {

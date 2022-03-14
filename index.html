@@ -27,12 +27,10 @@
             <button id="add-btn">Aggiungi</button>
         </div>
         <ul class="todo-list">
-            <li>
-                <div>Fare i compiti</div>
+            <li v-for="(item, index) in arrTodos" class="item">
+                <div>{{ arrTodos[index].text }}</div>
                 <i class="fas fa-times"></i>
             </li>
-            <li>Fare la spesa</li>
-            <li>Fare il bucato</li>
         </ul>
     </div>
 
