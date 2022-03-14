@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#root {
+    margin: 5rem auto;
+    max-width: 700px;
+}
+
+.add-todo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+#todo-text,
+#add-btn {
+    padding: .5rem 1rem;
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: .7em;
+}
+
+#todo-text {
+    margin-right: .5rem;
+    flex-grow: 100000;
+}
+
+#add-btn {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
