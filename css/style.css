@@ -4,15 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Noto Sans', sans-serif; 
+}
+
 #root {
     margin: 5rem auto;
     max-width: 700px;
+    font-size: 20px;
 }
 
 .add-todo {
+    margin: 0 auto;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
     max-width: 500px;
 }
 
@@ -25,11 +33,34 @@
 }
 
 #todo-text {
-    margin-right: .5rem;
     flex-grow: 100000;
 }
 
 #add-btn {
     flex-grow: 1;
     flex-shrink: 0;
+    background-color: #EFEFEF;
+}
+
+.todo-list {
+    padding: 2rem;
+    background-color: #F5F7F7;
+    border-radius: .7em;
+}
+
+.todo-list li{
+    padding: .7rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.todo-list li .fa-times {
+    font-weight: bold;
+}
+
+.todo-list li:hover {
+    background-color: white;
 }
