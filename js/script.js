@@ -46,12 +46,16 @@ const app = new Vue({
            this.arrTodos.splice(index, 1);
        },
        createNewTodo() {
-           if (this.newItemTodo.text.trim() != ``) {
-                this.arrTodos.push(this.newItemTodo);
-                // this.newItemTodo.text = ``;
-                this.$refs[newItemTodo.text].value = ``;
+           if (this.newItemTodo.text != ``) {
+                this.arrTodos.push({...this.newItemTodo});
+                this.newItemTodo.text = ``;
             };
        },
     },
 });
 
+
+/*
+TODO: 
+- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+*/
