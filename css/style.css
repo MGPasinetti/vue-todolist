@@ -58,6 +58,10 @@ html {
     cursor: pointer;
 }
 
+.todo-list .todo-text {
+    flex-grow: 1;
+}
+
 .todo-list li button {
     font-weight: bold;
     background-color: transparent;
@@ -70,11 +74,7 @@ html {
     background-color: white;
 }
 
-.no-active {
-    text-decoration: none;
-}
-
-.active {
+.done {
     text-decoration: line-through 3px solid black;
 }
 

@@ -29,7 +29,7 @@ const app = new Vue({
         arrTodos: [
             {
                 text: `Fare i compiti`,
-                done: true,
+                done: false,
             },
             {
                 text: `Fare la spesa`,
@@ -51,11 +51,9 @@ const app = new Vue({
                 this.newItemTodo.text = ``;
             };
        },
+       toggleDone(todoEle) {
+            todoEle.done = !todoEle.done;
+       },
     },
 });
 
-
-/*
-TODO: 
-- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
-*/
